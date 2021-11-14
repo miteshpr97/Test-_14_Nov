@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genral question</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            width: 70vw;
+            height: 60vh;
+            margin: 5vw auto;
+            border: 2px solid black;
+            padding: 2vw;
+            background-color: cadetblue;
+            box-shadow: 0 0 5px black;
+
+        }
+
+        .pp {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 60px;
+            height: 40vh;
+
+        }
+
+        #first {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 46vw;
+            height: 15px;
+            margin: 10px auto;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 0 20px black;
+            background-color: cornsilk;
+
+        }
+
+        #second {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 46vw;
+            height: 15px;
+            margin: 10px auto;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 0 20px black;
+            background-color: cornsilk;
+        }
+
+        #third {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 46vw;
+            height: 15px;
+            margin: 10px auto;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 0 20px black;
+            background-color: cornsilk;
+        }
+
+        p {
+            font-size: 1.4vw;
+            font-family: "Goudy Bookletter 1911", sans-serif;
+        }
+
+        button {
+            margin-left: 10rem;
+            width: 20px;
+            border-color: goldenrod;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="font-style: italic; color: gold; text-align: center; font-size: 3rem;">General Questions</h1>
+
+        <div class="pp">
+
+            <div id="first">
+                <p> Do You Accept All Major Credit Cards ?</p>
+                <button id="button1" onclick="fn1()">+</button>
+                <Span id="f1" style="margin:30px; font-size: 22px;"></Span>
+            </div>
+
+            <div id="second">
+                <p> Do You Accept All Major Credit Cards ?</p>
+                <button id="button2" onclick="fn2()">+</button>
+                <Span id="s2"  style="margin:30px; font-size: 22px;"></Span>
+            </div>
+
+            <div id="third">
+                <p> Do You Accept All Major Credit Cards ?</p>
+                <button id="button3" onclick="fn3()">+</button>
+                <Span id="t1" style="margin:30px; font-size: 22px;"></Span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        fn1 = () => {
+            var firstchange = document.getElementById('button1')
+            var firstname = document.getElementById('f1')
+            var inputvalue =firstchange.value;
+            firstname.innerText = "Yes";
+            firstname.style.color = "green"
+
+        }
+        fn2 = () => {
+            var firstchange = document.getElementById('button2')
+            var firstname = document.getElementById('s2')
+            var inputvalue =firstchange.value;
+            firstname.innerText = "Yes";
+            firstname.style.color = "green"
+
+        }
+
+        fn3 = () => {
+            var firstchange = document.getElementById('button3')
+            var firstname = document.getElementById('t1')
+            var inputvalue =firstchange.value;
+            firstname.innerText = "Yes";
+            firstname.style.color = "green"
+
+        }
+
+    </script>
+
+</body>
+
+</html>
